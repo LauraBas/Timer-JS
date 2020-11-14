@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel ="stylesheet" href="styles.css"/>
     <title>Time-JS</title>
 </head>
 <body>
-    <h2>Counter</h2>
-    <div>
-        <h4>0</h4>
+    <div class="container">
+        <p class="title">Counter</p>
+        <div>
+            <p class= "num" id="counter">0</p>
+        </div>
+        <button type="button" class="btn btn-info" id="plus">+</button>
+        <button type="button" class="btn btn-secondary" id="substract">-</button>
     </div>
-    <button>+</button>
-    <button>-</button>
+    <div class="container">
+        <p class="title">Seconds</p>
+        <p class= "num" id="timer">0</p>
+        <button id="play"type="button" class="btn btn-success">Play</button>
+        <button id="pause"type="button" class="btn btn-danger">Pause</button>
+        <button id="reset"type="button" class="btn btn-warning">Reset</button>
 
-    
+    </div>
+<script src="app.js"></script>    
 </body>
 </html>

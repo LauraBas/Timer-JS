@@ -8,27 +8,31 @@
     <title>Time-JS</title>
 </head>
 <body>
-    <div class="container">
-        <p class="title">Counter</p>
-        <div>
-            <p class= "num" id="counter">0</p>
+    <div class="container1">
+        <div class="container">
+            <p class="title">Counter</p>           
+                <p class= "num" id="counter">0</p>            
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-info" id="plus">+</button>
+                <button type="button" class="btn btn-secondary" id="substract">-</button>
+            </div>
         </div>
-        <button type="button" class="btn btn-info" id="plus">+</button>
-        <button type="button" class="btn btn-secondary" id="substract">-</button>
+        <div class="container">
+            <p class="title">Seconds</p>
+            <p class= "num" id="timer">0</p>
+            <div class="btn-group" role="group">
+                <button id="play"type="button" class="btn btn-success">Play</button>
+                <button id="pause"type="button" class="btn btn-danger">Pause</button>
+                <button id="reset"type="button" class="btn btn-warning">Reset</button>
+            </div>
+        </div>
+        <div class="container">
+            <p class="title">Clock</p>
+            <p class="num"id="time">What time is it?</p>
+            <button id="actualTime"type="button" class="btn btn-dark">Time</button>
+        </div>
     </div>
-    <div class="container">
-        <p class="title">Seconds</p>
-        <p class= "num" id="timer">0</p>
-        <button id="play"type="button" class="btn btn-success">Play</button>
-        <button id="pause"type="button" class="btn btn-danger">Pause</button>
-        <button id="reset"type="button" class="btn btn-warning">Reset</button>
-    </div>
-    <div class="container">
-        <p class="title">Clock</p>
-        <p class="num"id="time"></p>
-        <button id="actualTime"type="button" class="btn btn-dark">Time</button>
-
-    </div>
+    
 <script src="app.js"></script>    
 </body>
 </html>

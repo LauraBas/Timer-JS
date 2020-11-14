@@ -1,5 +1,6 @@
 .container {
    margin: 1em 1em;
+   text-align: center;
 
 }
 .num{
@@ -7,4 +8,7 @@
 }
 .title{
     font-size: 3vw;
+}
+.container1{
+    display: flex;
 }

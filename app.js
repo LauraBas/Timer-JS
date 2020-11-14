@@ -47,5 +47,24 @@ window.onload = function() {
         timer = 0;
         document.getElementById('timer').innerHTML = timer;
     }
+    document.getElementById('actualTime').addEventListener('click',startClock);
 
+    function startClock() {
+        let today = new Date();
+        let hour = today.getHours();
+        let min = today.getMinutes();
+        let sec = today.getSeconds();
+        
+        min = checkFormat(min);
+        sec = checkFormat(sec);
+        document.getElementById("time").innerHTML = hour + ":" + min + ":" + sec;
+        setTimeout(function(){startClock()}, 1000);
+      }
+      
+      function checkFormat(n) {
+        if (n < 10) {
+          n = "0" + n;
+        }
+        return n;
+      }
 }
